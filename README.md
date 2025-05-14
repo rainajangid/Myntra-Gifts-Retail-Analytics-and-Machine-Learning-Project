@@ -33,3 +33,38 @@ Click to run →
 
 
 
+Model Pipeline Highlights
+1. Data Cleaning: Removed invalid prices, quantities, and null IDs
+2. Feature Engineering: Created Revenue, LogRevenue, temporal features
+3. EDA: Generated 15+ business-focused charts
+4. Hypothesis Testing: Performed Welch’s t-tests on customer behavior
+5. Modeling: Linear Regression, Random Forest, and XGBoost
+6. Tuning: Used RandomizedSearchCV & HalvingSearchCV
+7. Explainability: Used SHAP to interpret model predictions
+8. Deployment: Exported trained model with scaler and feature list
+
+
+Model Deployment
+Trained model saved as xgb_pipeline_final.pkl
+Includes:
+XGBoost model
+Scaler
+Feature list
+
+
+Statistical Insights (Hypothesis Testing)
+UK vs Non-UK revenue per order → UK significantly higher
+Weekday vs Weekend purchases → Weekday sales are stronger
+High revenue vs low revenue orders → High revenue tied to higher unit price
+All tested using Welch’s t-test with p < 0.05 significance.
+
+
+
+
+Future Work
+Add demand forecasting (time series)
+Predict Customer Lifetime Value (CLV)
+Build product bundling & recommendation system
+Deploy via Flask/Streamlit app for demo
+
+
